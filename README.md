@@ -8,3 +8,9 @@ Method handle_connection yang baru membaca isi dari file hello.html menjadi stri
 
 Screenshot:
 ![Commit 2 screen capture](/assets/images/commit2.png)
+
+#### 3. Commit 3 reflection notes
+Pada method handle_connection sekarang, kini method mampu membaca path dari http request. Jika path yang direquest sesuai, maka akan menampilkan http response dengan status 200 (OK) berupa halaman hello.html, sedangkan path lainnya akan menampilkan http response dengan status 404 (Not Found) berupa halaman error (404.html). Kode ini perlu direfactor karena terdapat duplikasi kode pada blok if-else, dimana proses penulisan http response dilakukan dua kali yang membuat kode kurang efisien.
+
+Screenshot: 
+![Commit 3 screen capture](/assets/images/commit3.png)
